@@ -18,6 +18,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 public class MainActivity extends AppCompatActivity {
     ImageButton btnCourse,btnMap,btnNews,btnSocial;
     Button btnLogout;
+    // be dang dep trai
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
