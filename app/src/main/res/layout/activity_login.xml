@@ -1,117 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroud"
-    tools:context=".views.LoginActivity">
-
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:src="@drawable/login"
-        />
-    <TextView
+    tools:context=".LoginActivity">
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:background="@drawable/custom_button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="35dp"
-        android:text="ĐĂNG NHẬP"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:layout_marginTop="10dp"
-        android:textColor="#af0b0f"
-        />
-    <TextView
-        android:padding="2dp"
-        android:layout_margin="5dp"
+        android:layout_height="200dp"/>
+    <RelativeLayout
+        android:background="@drawable/background"
         android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:text="EMAIL"
-        android:textColor="#ff4500"
-        />
-    <EditText
-        android:background="@drawable/edittext_custom"
-        android:padding="2dp"
-        android:layout_margin="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:textSize="20dp"
-        android:id="@+id/loginEmail"
-        />
-    <TextView
-        android:padding="2dp"
-        android:layout_margin="5dp"
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:text="PASSWORD"
-        android:textColor="#ff4500"
-        />
-    <EditText
-        android:background="@drawable/edittext_custom"
-        android:inputType="textPassword"
-        android:padding="2dp"
-        android:layout_margin="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:textSize="20dp"
-        android:id="@+id/loginPassword"
-        />
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/rel1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
     <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="500dp"
         android:gravity="center"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="60dp"
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btnloginDangNhap"
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/logofpoly" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_edittext"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_email_login" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="15"
+                android:hint="Email"
+                android:padding="5dp"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_edittext"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_password_login" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="15"
+                android:hint="Password"
+                android:padding="5dp"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="30dp"
-            android:background="@drawable/button_custom"
-            android:padding="10dp"
-            android:text="ĐĂNG NHẬP" />
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:layout_marginRight="25dp"
+            android:padding="5dp"
+            android:text="Quên mật khẩu?"
+            android:textColor="#000"
+            android:textSize="15dp" />
 
         <Button
-            android:background="@drawable/button_custom"
-            android:id="@+id/btnLoginDangky"
-            android:text="ĐĂNG KÝ"
-            android:padding="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_button"
+            android:text="Đăng nhập"
+            app:backgroundTint="@null" />
+
         <Button
-            android:background="@drawable/button_custom"
-            android:id="@+id/btnLoginDangky"
-            android:text="ĐĂNG KÝ"
-            android:padding="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
-    <LinearLayout
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <com.google.android.gms.common.SignInButton
-            android:id="@+id/btnGoogle"
-            android:layout_width="100dp"
-            android:layout_height="50dp" />
-        <com.facebook.login.widget.LoginButton
-            android:id="@+id/login_button"
-            android:layout_width="200dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="30dp"
-            android:layout_gravity="center_horizontal" />
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_button"
+            android:text="Đăng ký"
+            app:backgroundTint="@null" />
+
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>
